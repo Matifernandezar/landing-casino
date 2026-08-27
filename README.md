@@ -13,6 +13,13 @@ npm install
 npm run dev
 ```
 
+## Producción
+
+```bash
+npm run build
+npm start
+```
+
 ## Google Search Console
 
 Después de comprar y conectar el dominio, creá una propiedad de dominio, agregá el registro TXT en DNS y enviá `https://casinovirtualargentina.com/sitemap.xml`.
