@@ -1,0 +1,43 @@
+import Link from "next/link";
+import { Camera, ChevronDown, ExternalLink, Menu } from "lucide-react";
+import { AffiliateLink } from "./affiliate-link";
+import { siteConfig } from "./site-config";
+
+export function Brand() {
+  return (
+    <span className="brand-lockup">
+      <span className="brand-mark" aria-hidden="true">CV</span>
+      <span className="brand-name">Casino Virtual<small>ARGENTINA</small></span>
+    </span>
+  );
+}
+
+export function SiteHeader() {
+  return (
+    <header className="site-header">
+      <div className="container header-inner">
+        <Link href="/" className="brand" aria-label="Casino Virtual Argentina, inicio"><Brand /></Link>
+        <nav className="desktop-nav" aria-label="Navegación principal">
+          <Link href="/#recomendado">Casino recomendado</Link>
+          <Link href="/casinos-online-legales-argentina">Casinos legales</Link>
+          <Link href="/bonos-casino-online-argentina">Bonos</Link>
+          <Link href="/casino-online-desde-el-celular">Guía móvil</Link>
+          <a href={siteConfig.instagram.url} target="_blank" rel="noopener noreferrer"><Camera size={14} /> Instagram</a>
+        </nav>
+        <AffiliateLink className="button button-small desktop-cta">Visitar casino <ExternalLink size={14} /></AffiliateLink>
+        <details className="mobile-menu">
+          <summary aria-label="Abrir menú"><Menu size={21} /><ChevronDown size={15} /></summary>
+          <nav aria-label="Navegación móvil">
+            <Link href="/#recomendado">Casino recomendado</Link>
+            <Link href="/casinos-online-legales-argentina">Casinos online legales</Link>
+            <Link href="/bonos-casino-online-argentina">Guía de bonos</Link>
+            <Link href="/casino-online-desde-el-celular">Casino desde el celular</Link>
+            <Link href="/metodologia">Cómo evaluamos</Link>
+            <a href={siteConfig.instagram.url} target="_blank" rel="noopener noreferrer">Seguir {siteConfig.instagram.handle}</a>
+            <AffiliateLink>Visitar operador destacado</AffiliateLink>
+          </nav>
+        </details>
+      </div>
+    </header>
+  );
+}

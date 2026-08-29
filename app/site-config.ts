@@ -1,0 +1,20 @@
+export const siteConfig = {
+  name: "Casino Virtual Argentina",
+  shortName: "CVA",
+  url: "https://casinovirtualargentina.com",
+  description:
+    "Guía independiente para encontrar casinos online autorizados en Argentina, verificar dominios .bet.ar y entender bonos, registros y juego responsable.",
+  updatedAt: "29 de agosto de 2026",
+  instagram: {
+    handle: "@casino_virtual.online",
+    url: "https://www.instagram.com/casino_virtual.online/",
+  },
+  featuredOperator: {
+    name: "Betsson Argentina",
+    // Reemplazar únicamente esta URL cuando llegue el enlace de afiliado aprobado.
+    url: "https://www.betsson.bet.ar/",
+    jurisdictions: ["CABA", "Provincia de Buenos Aires", "Córdoba"],
+  },
+} as const;
+
+export const affiliateRel = "sponsored nofollow noopener noreferrer";
