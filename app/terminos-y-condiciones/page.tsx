@@ -28,7 +28,7 @@ export default function TermsPage() {
         { href: "#afiliacion", label: "Afiliación" },
       ]}
     >
-      <p>Al acceder a casinovirtualargentina.com aceptás estas condiciones. Si no estás de acuerdo, debés dejar de utilizar el sitio.</p>
+      <p>Al acceder a casinovirtuargentina.com aceptás estas condiciones. Si no estás de acuerdo, debés dejar de utilizar el sitio.</p>
 
       <h2 id="naturaleza">Naturaleza de Casino Virtual Argentina</h2>
       <p>Casino Virtual Argentina es una publicación informativa independiente. No es un casino, una casa de apuestas, un agente de cobro ni un procesador de pagos. No crea cuentas de juego, no recibe depósitos, no acepta apuestas y no paga premios.</p>
