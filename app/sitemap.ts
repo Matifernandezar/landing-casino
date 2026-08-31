@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://casinovirtualargentina.com";
+const siteUrl = "https://www.casinovirtuargentina.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-08-29T00:00:00-03:00");
