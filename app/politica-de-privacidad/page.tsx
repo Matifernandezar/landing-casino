@@ -27,7 +27,7 @@ export default function PrivacyPage() {
         { href: "#cambios", label: "Cambios" },
       ]}
     >
-      <p>Esta política describe el funcionamiento de <strong>casinovirtualargentina.com</strong>. Casino Virtual Argentina es un sitio editorial independiente: no administra cuentas de juego, no solicita datos bancarios y no procesa depósitos, apuestas ni retiros.</p>
+      <p>Esta política describe el funcionamiento de <strong>casinovirtuargentina.com</strong>. Casino Virtual Argentina es un sitio editorial independiente: no administra cuentas de juego, no solicita datos bancarios y no procesa depósitos, apuestas ni retiros.</p>
 
       <h2 id="datos">Información tratada por el sitio</h2>
       <p>Actualmente no ofrecemos formularios de registro ni áreas de usuario. El servidor y la infraestructura de alojamiento pueden generar registros técnicos básicos, como dirección IP, navegador, fecha de acceso y páginas solicitadas, con fines de seguridad y funcionamiento.</p>
