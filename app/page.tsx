@@ -12,8 +12,8 @@ import {
   FileCheck2,
   Gamepad2,
   Landmark,
-  LockKeyhole,
   MapPin,
+  MessageCircle,
   SearchCheck,
   ShieldCheck,
   Smartphone,
@@ -22,7 +22,7 @@ import {
   UserCheck,
   WalletCards,
 } from "lucide-react";
-import { AffiliateLink } from "./affiliate-link";
+import { WhatsAppLink } from "./whatsapp-link";
 import { siteConfig } from "./site-config";
 
 const faqs = [
@@ -35,16 +35,16 @@ const faqs = [
     answer: "Comprobá que utilice un dominio terminado en .bet.ar, verificá la jurisdicción indicada al pie del sitio y confirmá que figure en el listado de la autoridad de loterías correspondiente.",
   },
   {
-    question: "¿Cuál es el casino online recomendado?",
-    answer: "Nuestra opción destacada actual es Betsson Argentina para usuarios habilitados de CABA, Provincia de Buenos Aires y Córdoba. La disponibilidad depende de tu ubicación y debe confirmarse antes del registro.",
+    question: "¿Cómo puedo hacer una consulta?",
+    answer: "Podés comunicarte directamente desde cualquiera de los botones de WhatsApp del sitio. Antes de registrarte o transferir dinero, verificá siempre la plataforma, sus condiciones y la regulación aplicable en tu provincia.",
   },
   {
     question: "¿Este sitio recibe depósitos o paga premios?",
-    answer: "No. Casino Virtual Argentina es una guía independiente. El registro, la verificación, los depósitos, el juego y los retiros se realizan exclusivamente dentro del operador autorizado.",
+    answer: "La página web no procesa pagos ni apuestas. Los botones abren nuestro canal de atención por WhatsApp, donde podés realizar una consulta antes de continuar.",
   },
   {
-    question: "¿Es seguro cargar saldo por WhatsApp?",
-    answer: "Un contacto de WhatsApp no reemplaza una licencia ni un dominio oficial. Para reducir riesgos, no transfieras dinero a cuentas personales: depositá únicamente desde la plataforma autorizada y verificá que el dominio termine en .bet.ar.",
+    question: "¿WhatsApp demuestra que una plataforma es legal?",
+    answer: "No. Un contacto de WhatsApp no reemplaza una licencia ni un dominio oficial. Antes de registrarte o transferir dinero, verificá la plataforma, sus condiciones y la regulación aplicable.",
   },
   {
     question: "¿Los bonos garantizan ganancias?",
@@ -60,19 +60,6 @@ const faqSchema = {
     name: question,
     acceptedAnswer: { "@type": "Answer", text: answer },
   })),
-};
-
-const listSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Casino online destacado en Argentina",
-  numberOfItems: 1,
-  itemListElement: [{
-    "@type": "ListItem",
-    position: 1,
-    name: siteConfig.featuredOperator.name,
-    url: siteConfig.featuredOperator.url,
-  }],
 };
 
 export default function Home() {
@@ -93,39 +80,40 @@ export default function Home() {
           <div className="hero-copy">
             <div className="eyebrow"><span /> GUÍA ARGENTINA · ACTUALIZADA EN 2026</div>
             <h1>Casino virtual en Argentina: elegí un sitio autorizado</h1>
-            <p className="hero-lead">Verificamos licencias, seguridad y condiciones para ayudarte a llegar a un casino online oficial, sin intermediarios y desde tu celular.</p>
+            <p className="hero-lead">Información clara sobre casino online en Argentina, con guías propias y un canal directo de atención por WhatsApp.</p>
             <div className="hero-actions">
-              <AffiliateLink className="button button-primary">Ver casino recomendado <ArrowRight size={18} /></AffiliateLink>
+              <WhatsAppLink className="button button-primary">Consultar por WhatsApp <MessageCircle size={18} /></WhatsAppLink>
               <Link className="text-link" href="/casinos-online-legales-argentina">Cómo comprobar si es legal</Link>
             </div>
             <a className="hero-instagram" href={siteConfig.instagram.url} target="_blank" rel="noopener noreferrer"><Camera size={16} /> Bonos, novedades y guías en {siteConfig.instagram.handle}</a>
             <div className="trust-row">
               <span><ShieldCheck size={17} /> Dominio .bet.ar</span>
               <span><UserCheck size={17} /> Registro +18 con verificación</span>
-              <span><LockKeyhole size={17} /> Sin transferencias a terceros</span>
+              <span><MessageCircle size={17} /> Atención directa por WhatsApp</span>
             </div>
           </div>
 
-          <aside className="operator-card" aria-label="Casino online destacado">
+          <aside className="operator-card" aria-label="Atención por WhatsApp">
             <div className="operator-card-top">
-              <span className="editorial-badge"><BadgeCheck size={14} /> ELECCIÓN EDITORIAL</span>
+              <span className="editorial-badge"><BadgeCheck size={14} /> ATENCIÓN DIRECTA</span>
               <span className="review-date">Revisado: {siteConfig.updatedAt}</span>
             </div>
             <div className="operator-identity">
-              <div className="operator-monogram" aria-hidden="true">B</div>
-              <div><p>CASINO ONLINE DESTACADO</p><h2>{siteConfig.featuredOperator.name}</h2></div>
+              <div className="operator-monogram" aria-hidden="true">CV</div>
+              <div><p>CANAL DE CONSULTAS</p><h2>{siteConfig.whatsapp.label}</h2></div>
             </div>
-            <p className="operator-summary">Operador con presencia regulada en tres jurisdicciones argentinas y acceso mediante dominios oficiales .bet.ar.</p>
-            <div className="jurisdiction-list" aria-label="Jurisdicciones verificadas">
-              {siteConfig.featuredOperator.jurisdictions.map((item) => <span key={item}><MapPin size={13} /> {item}</span>)}
+            <p className="operator-summary">Escribinos para resolver dudas sobre acceso, promociones y funcionamiento antes de continuar.</p>
+            <div className="jurisdiction-list" aria-label="Características de la atención">
+              <span><MessageCircle size={13} /> Respuesta directa</span>
+              <span><Smartphone size={13} /> Desde el celular</span>
             </div>
             <ul className="operator-features">
-              <li><Check size={16} /> Cuenta en pesos argentinos</li>
-              <li><Check size={16} /> Casino y apuestas desde el celular</li>
-              <li><Check size={16} /> Identidad y ubicación verificadas</li>
+              <li><Check size={16} /> Canal centralizado de atención</li>
+              <li><Check size={16} /> Información clara antes de jugar</li>
+              <li><Check size={16} /> Acceso exclusivo para mayores de 18 años</li>
             </ul>
-            <AffiliateLink className="button button-primary button-block">Visitar sitio oficial <ExternalLink size={17} /></AffiliateLink>
-            <p className="operator-note">Solo +18. Aplican términos y restricciones geográficas.</p>
+            <WhatsAppLink className="button button-primary button-block">Abrir WhatsApp <MessageCircle size={17} /></WhatsAppLink>
+            <p className="operator-note">Solo +18. El juego implica riesgo de pérdida.</p>
           </aside>
         </div>
       </section>
@@ -134,7 +122,7 @@ export default function Home() {
         <div className="container proof-grid">
           <div><SearchCheck size={23} /><span><strong>Licencia comprobable</strong>Revisamos el dominio oficial</span></div>
           <div><FileCheck2 size={23} /><span><strong>Condiciones visibles</strong>Sin promesas de ganar</span></div>
-          <div><WalletCards size={23} /><span><strong>Sin intermediarios</strong>El operador procesa tu dinero</span></div>
+          <div><WalletCards size={23} /><span><strong>Información antes de jugar</strong>Consultá condiciones y límites</span></div>
           <div><ShieldCheck size={23} /><span><strong>Juego responsable</strong>Solo para mayores de 18</span></div>
         </div>
       </section>
@@ -148,13 +136,13 @@ export default function Home() {
             <Link className="inline-link" href="/metodologia">Conocé nuestra metodología completa <ArrowRight size={15} /></Link>
           </div>
           <div className="criteria-grid">
-            <article><Landmark size={25} /><h3>Regulación local</h3><p>Presencia declarada en CABA, PBA y Córdoba, sujeta a la ubicación del jugador.</p></article>
-            <article><LockKeyhole size={25} /><h3>Cuenta personal</h3><p>Registro y verificación dentro del operador, sin entregar dinero a un cajero.</p></article>
+            <article><Landmark size={25} /><h3>Información local</h3><p>Contenido orientado a usuarios argentinos y a la regulación de cada jurisdicción.</p></article>
+            <article><MessageCircle size={25} /><h3>Atención directa</h3><p>Un único canal de WhatsApp para resolver consultas antes de continuar.</p></article>
             <article><Smartphone size={25} /><h3>Experiencia móvil</h3><p>Navegación, juegos, depósitos y retiros desde una misma plataforma.</p></article>
             <article><BookOpenCheck size={25} /><h3>Condiciones accesibles</h3><p>Términos, privacidad y juego responsable disponibles antes de participar.</p></article>
           </div>
         </div>
-        <div className="container source-note"><BadgeCheck size={18} /><p>Verificación editorial: Betsson informa licencias en Ciudad de Buenos Aires, Provincia de Buenos Aires y Córdoba. Confirmá siempre tu ubicación y el dominio final antes de crear una cuenta.</p></div>
+        <div className="container source-note"><BadgeCheck size={18} /><p>Antes de registrarte, verificá siempre tu ubicación, el dominio final, las condiciones y la autoridad reguladora correspondiente a tu provincia.</p></div>
       </section>
 
       <section className="section dark-section">
@@ -170,7 +158,7 @@ export default function Home() {
 
       <section className="section games-section">
         <div className="container content-split">
-          <div className="section-heading"><span className="section-kicker">CASINO ONLINE</span><h2>Encontrá tu tipo de juego en una sola plataforma</h2><p>La oferta puede variar según el operador y la jurisdicción. Antes de jugar, revisá reglas, límites y retorno teórico de cada título.</p><AffiliateLink className="button button-primary">Explorar juegos disponibles <ArrowRight size={17} /></AffiliateLink></div>
+          <div className="section-heading"><span className="section-kicker">CASINO ONLINE</span><h2>Encontrá tu tipo de juego en una sola plataforma</h2><p>La oferta puede variar según el operador y la jurisdicción. Antes de jugar, revisá reglas, límites y retorno teórico de cada título.</p><WhatsAppLink className="button button-primary">Consultar disponibilidad <MessageCircle size={17} /></WhatsAppLink></div>
           <div className="game-list">
             <article><Sparkles size={24} /><div><h3>Tragamonedas y slots</h3><p>Juegos de distintos proveedores, niveles de volatilidad y funciones.</p></div></article>
             <article><Gamepad2 size={24} /><div><h3>Casino en vivo</h3><p>Ruleta, blackjack y mesas transmitidas en tiempo real.</p></div></article>
@@ -214,11 +202,10 @@ export default function Home() {
       </section>
 
       <section className="final-cta">
-        <div className="container final-cta-inner"><div><span className="section-kicker">OPERADOR DESTACADO</span><h2>Entrá siempre por el sitio oficial</h2><p>Verificá tu jurisdicción. Solo mayores de 18 años. Aplican términos y condiciones.</p></div><AffiliateLink className="button button-dark">Visitar {siteConfig.featuredOperator.name} <ExternalLink size={17} /></AffiliateLink></div>
+        <div className="container final-cta-inner"><div><span className="section-kicker">ATENCIÓN DIRECTA</span><h2>¿Tenés una consulta?</h2><p>Escribinos por WhatsApp. Solo mayores de 18 años; el juego implica riesgo de pérdida.</p></div><WhatsAppLink className="button button-dark">Abrir WhatsApp <MessageCircle size={17} /></WhatsAppLink></div>
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(listSchema) }} />
     </main>
   );
 }

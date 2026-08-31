@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BadgeCheck, ExternalLink, Landmark, MapPin, SearchCheck, ShieldAlert, ShieldCheck } from "lucide-react";
-import { AffiliateLink } from "../affiliate-link";
+import { WhatsAppLink } from "../whatsapp-link";
 import { ArticleLayout, ArticleSchema } from "../article-layout";
 
 const title = "Casinos online legales en Argentina: cómo reconocerlos";
@@ -60,10 +60,10 @@ export default function LegalCasinosPage() {
         <div><strong>Responsabilidad</strong><span>Ofrece límites, autoexclusión y advertencias visibles sobre el riesgo de pérdida.</span></div>
       </div>
 
-      <h2 id="recomendado">Nuestra opción destacada actual</h2>
-      <p>Destacamos a <strong>Betsson Argentina</strong> porque informa presencia autorizada en Ciudad de Buenos Aires, Provincia de Buenos Aires y Córdoba, utiliza dominios .bet.ar y concentra el registro, los pagos y el juego dentro de su plataforma. La recomendación sigue estando sujeta a que el usuario se encuentre en una jurisdicción habilitada.</p>
-      <p>Esta selección no significa que sea adecuado para todas las personas ni garantiza resultados. El juego siempre implica riesgo. Antes de registrarte, revisá las condiciones vigentes directamente en el operador.</p>
-      <AffiliateLink className="button button-primary">Visitar el sitio oficial <ExternalLink size={17} /></AffiliateLink>
+      <h2 id="recomendado">Orientación antes de registrarte</h2>
+      <p>Si necesitás ayuda para interpretar una promoción o reconocer un dominio, podés escribirnos por WhatsApp. La consulta no reemplaza la verificación de la licencia ni las condiciones publicadas por la plataforma.</p>
+      <p>El juego siempre implica riesgo. Antes de registrarte, confirmá que la plataforma esté autorizada para tu ubicación y revisá sus condiciones vigentes.</p>
+      <WhatsAppLink className="button button-primary">Consultar por WhatsApp <ExternalLink size={17} /></WhatsAppLink>
 
       <h2 id="alertas">Señales de alerta de una plataforma no autorizada</h2>
       <ul>

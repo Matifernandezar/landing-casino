@@ -26,7 +26,7 @@ export function SiteFooter() {
           <Link href="/terminos-y-condiciones">Términos</Link>
         </div>
       </div>
-      <div className="container affiliate-disclosure"><strong>Divulgación de afiliados:</strong> algunos enlaces pueden generar una comisión para este sitio, sin costo adicional para vos. Esto no modifica nuestros criterios de evaluación.</div>
+      <div className="container affiliate-disclosure"><strong>Canal de contacto:</strong> los botones de consulta abren nuestro WhatsApp. Verificá siempre las condiciones, la plataforma y la regulación aplicable antes de jugar.</div>
       <div className="container footer-bottom"><span>© 2026 Casino Virtual Argentina</span><span>Solo mayores de 18 años · El juego implica riesgo de pérdida</span></div>
     </footer>
   );

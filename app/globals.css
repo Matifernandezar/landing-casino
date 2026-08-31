@@ -217,6 +217,30 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .affiliate-disclosure strong { color: #9caaa1; }
 .footer-bottom { padding-top: 21px; display: flex; justify-content: space-between; gap: 20px; color: #58645e; font-size: 8px; }
 
+/* WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 45;
+  min-height: 58px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  background: #20a960;
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 999px;
+  box-shadow: 0 16px 36px rgba(0,0,0,.34);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+.whatsapp-float:hover { transform: translateY(-3px); background: #168f4f; box-shadow: 0 20px 42px rgba(0,0,0,.4); }
+
 /* Age gate */
 .age-dialog { padding: 34px; color: #f4f0e5; background: #0b1c16; border-color: rgba(217,180,91,.35); }
 .age-dialog [data-slot="dialog-title"] { margin: 8px 0; font: 34px/1.1 Georgia, serif; }
@@ -314,6 +338,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .article-sidebar { grid-template-columns: 1fr; }
   .check-table > div { grid-template-columns: 1fr; gap: 7px; }
   .legal-card-grid { grid-template-columns: 1fr; }
+  .whatsapp-float { right: 16px; bottom: 16px; width: 56px; min-height: 56px; padding: 0; }
+  .whatsapp-float span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 }
 
 @media (max-width: 440px) {

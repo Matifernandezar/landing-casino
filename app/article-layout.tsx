@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { ArrowRight, ExternalLink, ShieldCheck } from "lucide-react";
-import { AffiliateLink } from "./affiliate-link";
+import { ArrowRight, MessageCircle, ShieldCheck } from "lucide-react";
+import { WhatsAppLink } from "./whatsapp-link";
 import { siteConfig } from "./site-config";
 
 type TocItem = { href: string; label: string };
@@ -46,10 +46,10 @@ export function ArticleLayout({
             </nav>
             {showOperator ? (
               <div className="sidebar-card">
-                <span>OPERADOR DESTACADO</span>
-                <h2>{siteConfig.featuredOperator.name}</h2>
-                <p>Acceso al sitio oficial. Verificá tu provincia antes de registrarte.</p>
-                <AffiliateLink className="button button-primary">Visitar casino <ExternalLink size={16} /></AffiliateLink>
+                <span>ATENCIÓN DIRECTA</span>
+                <h2>¿Tenés una consulta?</h2>
+                <p>Escribinos por WhatsApp para recibir orientación antes de continuar.</p>
+                <WhatsAppLink className="button button-primary">Abrir WhatsApp <MessageCircle size={16} /></WhatsAppLink>
               </div>
             ) : (
               <div className="sidebar-card">

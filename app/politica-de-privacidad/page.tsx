@@ -37,9 +37,9 @@ export default function PrivacyPage() {
       <p>El sitio almacena localmente en el dispositivo una preferencia denominada <strong>cva-age-confirmed</strong>. Su única finalidad es recordar que la persona confirmó ser mayor de 18 años y evitar mostrar el aviso en cada visita. No contiene nombre, documento ni información financiera.</p>
       <p>Podés eliminar esta preferencia borrando los datos del sitio desde la configuración de tu navegador.</p>
 
-      <h2 id="externos">Enlaces hacia operadores e Instagram</h2>
-      <p>El sitio contiene enlaces hacia plataformas externas, incluido el operador destacado e Instagram. Esos servicios aplican sus propias políticas de privacidad y pueden utilizar cookies o tecnologías de atribución. Revisá sus documentos antes de proporcionar información personal.</p>
-      <p>Algunos enlaces externos pueden ser de afiliado. Esto permite atribuir una visita o registro a Casino Virtual Argentina, pero no nos entrega acceso a la contraseña, documentación, saldo ni movimientos de juego del usuario.</p>
+      <h2 id="externos">Enlaces hacia WhatsApp e Instagram</h2>
+      <p>El sitio contiene enlaces hacia WhatsApp e Instagram. Esos servicios aplican sus propias políticas de privacidad y pueden tratar información técnica o de la cuenta utilizada. Revisá sus documentos antes de proporcionar información personal.</p>
+      <p>Al abrir WhatsApp abandonás este sitio. No compartas contraseñas, códigos de verificación ni documentación sensible mediante mensajes no solicitados.</p>
 
       <h2>Personas menores de edad</h2>
       <p>El contenido está dirigido exclusivamente a mayores de 18 años. No buscamos recopilar información de menores ni promocionarles juegos de azar.</p>

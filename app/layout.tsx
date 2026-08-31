@@ -3,6 +3,7 @@ import { AgeGate } from "./age-gate";
 import { SiteFooter } from "./site-footer";
 import { SiteHeader } from "./site-header";
 import { siteConfig } from "./site-config";
+import { WhatsAppFloat } from "./whatsapp-link";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -60,6 +61,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <SiteHeader />
         {children}
         <SiteFooter />
+        <WhatsAppFloat />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       </body>
     </html>

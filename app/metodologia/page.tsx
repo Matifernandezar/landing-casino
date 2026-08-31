@@ -53,13 +53,12 @@ export default function MethodologyPage() {
       </ol>
       <div className="article-callout"><BadgeCheck size={26} /><p>No publicamos puntuaciones numéricas inventadas, testimonios falsos ni promesas sobre velocidad de retiros que no podamos sostener con información verificable.</p></div>
 
-      <h2 id="afiliados">Cómo funcionan nuestros enlaces de afiliado</h2>
-      <p>Algunos enlaces que conducen hacia un operador pueden incluir un identificador de afiliado. Si un usuario se registra o cumple determinadas condiciones, Casino Virtual Argentina podría recibir una comisión. Esta comisión no aumenta el costo para el usuario.</p>
-      <p>La relación comercial no convierte al operador en propietario de este sitio ni le permite controlar nuestras explicaciones. Marcamos estos enlaces como patrocinados para que los buscadores y las personas puedan comprender su naturaleza.</p>
-      <p>En esta etapa destacamos a Betsson Argentina por sus señales regulatorias y su presencia declarada en CABA, Provincia de Buenos Aires y Córdoba. La recomendación puede cambiar si cambian las licencias, las condiciones o la calidad de la experiencia.</p>
+      <h2 id="afiliados">Cómo funciona nuestro canal de contacto</h2>
+      <p>Los botones de consulta abren un canal de WhatsApp administrado por Casino Virtual Argentina. Este contacto permite resolver preguntas generales, pero no reemplaza la información oficial, la licencia ni los términos de cada plataforma.</p>
+      <p>Nuestros criterios editoriales siguen priorizando autorización local, transparencia y juego responsable. Una conversación por mensajería no convierte una plataforma en legal ni garantiza resultados.</p>
 
       <h2 id="correcciones">Actualizaciones y correcciones</h2>
-      <p>La regulación, los dominios, los bonos y los medios de pago pueden cambiar. Por eso colocamos una fecha visible en las guías y priorizamos enlaces hacia fuentes oficiales. Si detectás información desactualizada, podés avisarnos mediante nuestro canal de <a href="https://www.instagram.com/casino_virtual.online/" target="_blank" rel="noopener noreferrer">Instagram {`@casino_virtual.online`} <ExternalLink size={13} /></a>.</p>
+      <p>La regulación, los dominios, los bonos y los medios de pago pueden cambiar. Por eso colocamos una fecha visible en las guías y priorizamos enlaces hacia fuentes oficiales. Si detectás información desactualizada, podés avisarnos mediante nuestro canal de <a href="https://wa.link/1vfkxs" target="_blank" rel="nofollow noopener noreferrer">WhatsApp <ExternalLink size={13} /></a>.</p>
 
       <h2>Fuentes que priorizamos</h2>
       <ul>

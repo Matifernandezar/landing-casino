@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AlertTriangle, Calculator, Clock3, ExternalLink, FileText, Gift, ShieldCheck } from "lucide-react";
-import { AffiliateLink } from "../affiliate-link";
+import { WhatsAppLink } from "../whatsapp-link";
 import { ArticleLayout, ArticleSchema } from "../article-layout";
 
 const title = "Bonos de casino online en Argentina: guía sin letra chica";
@@ -72,8 +72,8 @@ export default function CasinoBonusPage() {
       </ul>
 
       <h2>Cómo usamos las promociones en este sitio</h2>
-      <p>Casino Virtual Argentina puede comunicar promociones del operador destacado y también compartir novedades mediante <a href="https://www.instagram.com/casino_virtual.online/" target="_blank" rel="noopener noreferrer">@casino_virtual.online</a>. Siempre deben prevalecer los términos publicados por el operador. Si existe una diferencia, la información oficial es la válida.</p>
-      <AffiliateLink className="button button-primary">Consultar promociones oficiales <ExternalLink size={17} /></AffiliateLink>
+      <p>Casino Virtual Argentina puede comunicar promociones y también compartir novedades mediante <a href="https://www.instagram.com/casino_virtual.online/" target="_blank" rel="noopener noreferrer">@casino_virtual.online</a>. Siempre deben prevalecer los términos publicados por la plataforma. Si existe una diferencia, la información oficial es la válida.</p>
+      <WhatsAppLink className="button button-primary">Consultar promociones por WhatsApp <ExternalLink size={17} /></WhatsAppLink>
 
       <h2>Siguiente paso</h2>
       <p>Antes de aceptar cualquier bono, confirmá que estés utilizando uno de los <Link href="/casinos-online-legales-argentina">casinos online legales en Argentina</Link> y establecé un presupuesto que puedas perder sin afectar tus obligaciones.</p>

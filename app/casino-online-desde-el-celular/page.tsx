@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BadgeCheck, ExternalLink, Fingerprint, LockKeyhole, MapPin, Smartphone, Wifi } from "lucide-react";
-import { AffiliateLink } from "../affiliate-link";
+import { WhatsAppLink } from "../whatsapp-link";
 import { ArticleLayout, ArticleSchema } from "../article-layout";
 
 const title = "Casino online desde el celular: registro y seguridad";
@@ -77,9 +77,9 @@ export default function MobileCasinoPage() {
       <p>Ambas opciones pueden ser válidas. El navegador evita instalaciones y permite comprobar fácilmente la dirección. Una aplicación oficial puede ofrecer una experiencia más integrada, pero debe descargarse desde el sitio del operador o la tienda oficial indicada por él. Nunca instales archivos enviados por un desconocido.</p>
       <div className="article-callout"><Wifi size={26} /><p>Una conexión rápida mejora la experiencia, pero no cambia las probabilidades de los juegos. La estabilidad técnica no debe confundirse con una mayor posibilidad de ganar.</p></div>
 
-      <h2>Acceso al operador destacado</h2>
-      <p>Betsson Argentina ofrece una experiencia móvil para usuarios habilitados en CABA, Provincia de Buenos Aires y Córdoba. Confirmá la disponibilidad para tu ubicación antes del registro.</p>
-      <AffiliateLink className="button button-primary">Abrir sitio oficial desde el celular <ExternalLink size={17} /></AffiliateLink>
+      <h2>Consultá desde el celular</h2>
+      <p>Si necesitás orientación antes de continuar, podés abrir nuestro canal de WhatsApp. Verificá igualmente la disponibilidad, el dominio y las condiciones para tu ubicación.</p>
+      <WhatsAppLink className="button button-primary">Consultar desde el celular <ExternalLink size={17} /></WhatsAppLink>
 
       <h2>Seguimos ayudándote</h2>
       <p>Consultá nuestra guía de <Link href="/casinos-online-legales-argentina">casinos online legales</Link> y aprendé a interpretar los <Link href="/bonos-casino-online-argentina">bonos de casino en Argentina</Link>.</p>

@@ -9,12 +9,8 @@ export const siteConfig = {
     handle: "@casino_virtual.online",
     url: "https://www.instagram.com/casino_virtual.online/",
   },
-  featuredOperator: {
-    name: "Betsson Argentina",
-    // Reemplazar únicamente esta URL cuando llegue el enlace de afiliado aprobado.
-    url: "https://www.betsson.bet.ar/",
-    jurisdictions: ["CABA", "Provincia de Buenos Aires", "Córdoba"],
+  whatsapp: {
+    url: "https://wa.link/1vfkxs",
+    label: "Atención por WhatsApp",
   },
 } as const;
-
-export const affiliateRel = "sponsored nofollow noopener noreferrer";

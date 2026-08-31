@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Camera, ChevronDown, ExternalLink, Menu } from "lucide-react";
-import { AffiliateLink } from "./affiliate-link";
+import { Camera, ChevronDown, Menu, MessageCircle } from "lucide-react";
+import { WhatsAppLink } from "./whatsapp-link";
 import { siteConfig } from "./site-config";
 
 export function Brand() {
@@ -24,7 +24,7 @@ export function SiteHeader() {
           <Link href="/casino-online-desde-el-celular">Guía móvil</Link>
           <a href={siteConfig.instagram.url} target="_blank" rel="noopener noreferrer"><Camera size={14} /> Instagram</a>
         </nav>
-        <AffiliateLink className="button button-small desktop-cta">Visitar casino <ExternalLink size={14} /></AffiliateLink>
+        <WhatsAppLink className="button button-small desktop-cta">Consultar <MessageCircle size={14} /></WhatsAppLink>
         <details className="mobile-menu">
           <summary aria-label="Abrir menú"><Menu size={21} /><ChevronDown size={15} /></summary>
           <nav aria-label="Navegación móvil">
@@ -34,7 +34,7 @@ export function SiteHeader() {
             <Link href="/casino-online-desde-el-celular">Casino desde el celular</Link>
             <Link href="/metodologia">Cómo evaluamos</Link>
             <a href={siteConfig.instagram.url} target="_blank" rel="noopener noreferrer">Seguir {siteConfig.instagram.handle}</a>
-            <AffiliateLink>Visitar operador destacado</AffiliateLink>
+            <WhatsAppLink>Consultar por WhatsApp</WhatsAppLink>
           </nav>
         </details>
       </div>
