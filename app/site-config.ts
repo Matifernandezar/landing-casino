@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Casino Virtual Argentina",
   shortName: "CVA",
-  url: "https://casinovirtualargentina.com",
+  url: "https://www.casinovirtuargentina.com",
   description:
     "Guía independiente para encontrar casinos online autorizados en Argentina, verificar dominios .bet.ar y entender bonos, registros y juego responsable.",
   updatedAt: "29 de agosto de 2026",
