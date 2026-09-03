@@ -68,11 +68,12 @@ export default function Home() {
       <section className="hero">
         <Image
           className="hero-image"
-          src="https://raw.githubusercontent.com/Matifernandezar/landing-casino/main/public/casino-hero.png"
+          src="/casino-hero.webp"
           alt="Mesa de casino elegante con luces doradas y tonos verdes"
           fill
           priority
           sizes="100vw"
+          quality={72}
         />
         <div className="hero-overlay" aria-hidden="true" />
         <div className="hero-glow" aria-hidden="true" />
