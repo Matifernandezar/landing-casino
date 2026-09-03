@@ -201,6 +201,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .faq-list details[open] summary svg { transform: rotate(180deg); }
 .faq-list details p { max-width: 650px; padding: 0 35px 24px 0; color: #96a59b; font-size: 12px; line-height: 1.75; }
 .final-cta { padding: 66px 0; color: #132019; background: #efe7d4; }
+.final-cta .section-kicker { color: #684b12; }
 .final-cta-inner { display: flex; justify-content: space-between; align-items: center; gap: 40px; }
 .final-cta h2 { margin: 9px 0 8px; font-size: 38px; }
 .final-cta p { margin: 0; color: #465149; font-size: 12px; }
@@ -232,7 +233,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   justify-content: center;
   gap: 10px;
   color: #fff;
-  background: #20a960;
+  background: #0b6b3e;
   border: 1px solid rgba(255,255,255,.28);
   border-radius: 999px;
   box-shadow: 0 16px 36px rgba(0,0,0,.34);
@@ -241,7 +242,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   letter-spacing: .02em;
   transition: transform .2s ease, background .2s ease;
 }
-.whatsapp-float:hover { transform: translateY(-3px); background: #168f4f; box-shadow: 0 20px 42px rgba(0,0,0,.4); }
+.whatsapp-float:hover { transform: translateY(-3px); background: #085631; box-shadow: 0 20px 42px rgba(0,0,0,.4); }
 
 /* WhatsApp */
 .whatsapp-float {
