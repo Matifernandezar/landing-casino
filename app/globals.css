@@ -184,7 +184,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .instagram-band span { color: rgba(255,255,255,.7); font-size: 8px; font-weight: 900; letter-spacing: .18em; }
 .instagram-band h2 { margin: 5px 0 4px; font-size: 26px; }
 .instagram-band p { margin: 0; color: rgba(255,255,255,.72); font-size: 11px; }
-.guide-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 15px; }
+.guide-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 15px; }
 .guide-grid > a { min-height: 285px; padding: 31px; display: flex; flex-direction: column; color: #19251f; background: #fffdf8; border: 1px solid #ddd6c5; transition: transform .2s ease; }
 .guide-grid > a:hover { transform: translateY(-5px); box-shadow: 0 22px 45px rgba(20,35,27,.1); }
 .guide-grid svg { color: #9e7628; }
@@ -243,30 +243,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   transition: transform .2s ease, background .2s ease;
 }
 .whatsapp-float:hover { transform: translateY(-3px); background: #085631; box-shadow: 0 20px 42px rgba(0,0,0,.4); }
-
-/* WhatsApp */
-.whatsapp-float {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  z-index: 45;
-  min-height: 58px;
-  padding: 0 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  color: #fff;
-  background: #20a960;
-  border: 1px solid rgba(255,255,255,.28);
-  border-radius: 999px;
-  box-shadow: 0 16px 36px rgba(0,0,0,.34);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: .02em;
-  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
-}
-.whatsapp-float:hover { transform: translateY(-3px); background: #168f4f; box-shadow: 0 20px 42px rgba(0,0,0,.4); }
 
 /* Age gate */
 .age-dialog { padding: 34px; color: #f4f0e5; background: #0b1c16; border-color: rgba(217,180,91,.35); }

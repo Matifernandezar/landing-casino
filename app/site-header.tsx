@@ -18,7 +18,7 @@ export function SiteHeader() {
       <div className="container header-inner">
         <Link href="/" className="brand" aria-label="Casino Virtual Argentina, inicio"><Brand /></Link>
         <nav className="desktop-nav" aria-label="Navegación principal">
-          <Link href="/#recomendado">Casino recomendado</Link>
+          <Link href="/casino-online-whatsapp-argentina">Casino por WhatsApp</Link>
           <Link href="/casinos-online-legales-argentina">Casinos legales</Link>
           <Link href="/bonos-casino-online-argentina">Bonos</Link>
           <Link href="/casino-online-desde-el-celular">Guía móvil</Link>
@@ -28,7 +28,7 @@ export function SiteHeader() {
         <details className="mobile-menu">
           <summary aria-label="Abrir menú"><Menu size={21} /><ChevronDown size={15} /></summary>
           <nav aria-label="Navegación móvil">
-            <Link href="/#recomendado">Casino recomendado</Link>
+            <Link href="/casino-online-whatsapp-argentina">Casino por WhatsApp</Link>
             <Link href="/casinos-online-legales-argentina">Casinos online legales</Link>
             <Link href="/bonos-casino-online-argentina">Guía de bonos</Link>
             <Link href="/casino-online-desde-el-celular">Casino desde el celular</Link>

@@ -82,7 +82,7 @@ export function ArticleSchema({
     description,
     inLanguage: "es-AR",
     datePublished: "2026-08-29",
-    dateModified: "2026-08-29",
+    dateModified: "2026-09-10",
     mainEntityOfPage: `${siteConfig.url}${path}`,
     author: { "@type": "Organization", name: siteConfig.name },
     publisher: { "@type": "Organization", name: siteConfig.name },

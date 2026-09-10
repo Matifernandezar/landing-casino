@@ -14,6 +14,7 @@ export function SiteFooter() {
         </div>
         <div>
           <strong>Guías</strong>
+          <Link href="/casino-online-whatsapp-argentina">Casino por WhatsApp</Link>
           <Link href="/casinos-online-legales-argentina">Casinos online legales</Link>
           <Link href="/bonos-casino-online-argentina">Bonos de casino</Link>
           <Link href="/casino-online-desde-el-celular">Casino desde el celular</Link>

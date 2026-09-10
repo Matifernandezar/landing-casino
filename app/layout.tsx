@@ -9,7 +9,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Casino Virtual Argentina | Casinos online legales y seguros",
+    default: "Casino Virtual Argentina | Atención por WhatsApp",
     template: "%s | Casino Virtual Argentina",
   },
   description: siteConfig.description,
@@ -20,13 +20,15 @@ export const metadata: Metadata = {
     "casinos online legales argentina",
     "casino online seguro",
     "casino online desde el celular",
+    "casino online whatsapp argentina",
+    "casino virtual whatsapp",
   ],
   openGraph: {
     type: "website",
     locale: "es_AR",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Casino Virtual Argentina | Guía de casinos online legales",
+    title: "Casino Virtual Argentina | Atención por WhatsApp",
     description: siteConfig.description,
   },
   twitter: {
