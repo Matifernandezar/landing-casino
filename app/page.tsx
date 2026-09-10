@@ -135,7 +135,7 @@ export default function Home() {
             <h2>Una recomendación basada en señales que podés verificar</h2>
             <p>No elegimos por el bono más llamativo. Priorizamos que el jugador pueda identificar al operador, revisar su jurisdicción y gestionar todo dentro de una plataforma oficial.</p>
             <Link className="inline-link" href="/metodologia">Conocé nuestra metodología completa <ArrowRight size={15} /></Link>
-            <p>Si preferís resolver una duda antes de continuar, consultá nuestra guía de <Link className="inline-link" href="/casino-online-whatsapp-argentina">casino online por WhatsApp en Argentina <ArrowRight size={15} /></Link>.</p>
+            <p>Si preferís resolver una duda antes de continuar, consultá nuestra guía de <Link className="inline-link" href="/casino-online-whatsapp-argentina">casino online por WhatsApp 24 horas en Argentina <ArrowRight size={15} /></Link>.</p>
           </div>
           <div className="criteria-grid">
             <article><Landmark size={25} /><h3>Información local</h3><p>Contenido orientado a usuarios argentinos y a la regulación de cada jurisdicción.</p></article>
@@ -189,7 +189,7 @@ export default function Home() {
         <div className="container">
           <div className="section-heading centered"><span className="section-kicker">GUÍAS DE CASINO VIRTUAL</span><h2>Respuestas útiles antes de registrarte</h2><p>Contenido propio para decidir con más información y menos riesgo.</p></div>
           <div className="guide-grid">
-            <Link href="/casino-online-whatsapp-argentina"><MessageCircle size={26} /><span>ATENCIÓN DIRECTA</span><h3>Casino online por WhatsApp</h3><p>Qué podés consultar y qué controles hacer antes de registrarte.</p><strong>Leer guía <ArrowRight size={15} /></strong></Link>
+            <Link href="/casino-online-whatsapp-argentina"><MessageCircle size={26} /><span>ATENCIÓN DIRECTA</span><h3>Casino online por WhatsApp 24 horas</h3><p>Qué podés consultar y qué controles hacer antes de registrarte.</p><strong>Leer guía <ArrowRight size={15} /></strong></Link>
             <Link href="/casinos-online-legales-argentina"><ShieldCheck size={26} /><span>SEGURIDAD</span><h3>Casinos online legales en Argentina</h3><p>Cómo funcionan las licencias provinciales y qué significa .bet.ar.</p><strong>Leer guía <ArrowRight size={15} /></strong></Link>
             <Link href="/casino-online-desde-el-celular"><Smartphone size={26} /><span>GUÍA MÓVIL</span><h3>Casino online desde el celular</h3><p>Registro, identidad, depósitos y controles desde un dispositivo móvil.</p><strong>Leer guía <ArrowRight size={15} /></strong></Link>
             <Link href="/bonos-casino-online-argentina"><CircleDollarSign size={26} /><span>PROMOCIONES</span><h3>Bonos de casino online</h3><p>Cómo interpretar requisitos y reconocer una oferta poco conveniente.</p><strong>Leer guía <ArrowRight size={15} /></strong></Link>

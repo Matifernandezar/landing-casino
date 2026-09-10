@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: "CVA",
   url: "https://www.casinovirtuargentina.com",
   description:
-    "Guía de casino online en Argentina con atención por WhatsApp, información sobre plataformas autorizadas, bonos, seguridad y juego responsable.",
+    "Guía de casino online en Argentina con consultas por WhatsApp las 24 horas, información sobre plataformas autorizadas, bonos, seguridad y juego responsable.",
   updatedAt: "10 de septiembre de 2026",
   instagram: {
     handle: "@casino_virtual.online",

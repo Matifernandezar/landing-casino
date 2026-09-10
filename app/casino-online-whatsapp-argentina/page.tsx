@@ -4,12 +4,12 @@ import { BadgeCheck, Clock3, ExternalLink, MessageCircle, SearchCheck, ShieldChe
 import { ArticleLayout, ArticleSchema } from "../article-layout";
 import { WhatsAppLink } from "../whatsapp-link";
 
-const title = "Casino online por WhatsApp en Argentina: guía y atención";
-const description = "Cómo consultar por WhatsApp sobre casino online en Argentina, qué verificar antes de registrarte y cómo reconocer una plataforma segura.";
+const title = "Casino online por WhatsApp 24 horas en Argentina";
+const description = "Cómo consultar por WhatsApp las 24 horas sobre casino online en Argentina, qué verificar antes de continuar y cómo reconocer una plataforma segura.";
 const path = "/casino-online-whatsapp-argentina";
 
 export const metadata: Metadata = {
-  title: "Casino online por WhatsApp en Argentina",
+  title,
   description,
   alternates: { canonical: path },
   keywords: [
@@ -17,6 +17,8 @@ export const metadata: Metadata = {
     "casino virtual whatsapp",
     "casino por whatsapp",
     "casino online argentina whatsapp",
+    "casino online 24 horas whatsapp",
+    "casino whatsapp 24 horas argentina",
   ],
   openGraph: { title, description, url: path, type: "article" },
 };
@@ -25,6 +27,10 @@ const faqs = [
   {
     question: "¿Puedo hacer consultas de casino online por WhatsApp?",
     answer: "Sí. Podés usar nuestro canal de WhatsApp para resolver dudas generales sobre acceso, promociones y funcionamiento antes de continuar.",
+  },
+  {
+    question: "¿El canal de WhatsApp está disponible las 24 horas?",
+    answer: "Podés dejar tu consulta durante las 24 horas. El tiempo de respuesta depende de la disponibilidad del canal en ese momento.",
   },
   {
     question: "¿Tener WhatsApp significa que un casino es legal?",
@@ -56,7 +62,7 @@ export default function CasinoWhatsAppPage() {
       kicker="ATENCIÓN DIRECTA"
       title={title}
       description={description}
-      readingTime="6 minutos de lectura"
+      readingTime="7 minutos de lectura"
       toc={[
         { href: "#respuesta", label: "Respuesta rápida" },
         { href: "#consultas", label: "Qué podés consultar" },
@@ -65,16 +71,16 @@ export default function CasinoWhatsAppPage() {
         { href: "#preguntas", label: "Preguntas frecuentes" },
       ]}
     >
-      <p id="respuesta"><strong>Respuesta rápida:</strong> Casino Virtual Argentina ofrece un canal directo de atención por WhatsApp para personas mayores de 18 años. Podés utilizarlo para hacer una consulta antes de registrarte o continuar en una plataforma.</p>
+      <p id="respuesta"><strong>Respuesta rápida:</strong> Casino Virtual Argentina ofrece un canal directo de consultas por WhatsApp disponible las 24 horas para personas mayores de 18 años. Podés dejar tu mensaje en cualquier momento antes de registrarte o continuar en una plataforma.</p>
 
       <div className="article-callout"><MessageCircle size={26} /><p>WhatsApp es un canal de comunicación. No demuestra que una plataforma tenga licencia ni reemplaza la verificación del dominio y la regulación correspondiente a tu provincia.</p></div>
 
-      <h2 id="consultas">Qué podés consultar por WhatsApp</h2>
+      <h2 id="consultas">Casino online por WhatsApp con consultas las 24 horas</h2>
       <div className="legal-card-grid">
         <article><Smartphone size={25} /><h3>Acceso desde el celular</h3><p>Consultas generales sobre el acceso móvil y el funcionamiento de la plataforma.</p></article>
         <article><BadgeCheck size={25} /><h3>Promociones disponibles</h3><p>Información sobre condiciones, vencimientos y requisitos que conviene leer antes de aceptar un bono.</p></article>
         <article><SearchCheck size={25} /><h3>Dominio y disponibilidad</h3><p>Orientación para revisar la dirección final y confirmar si corresponde a tu ubicación.</p></article>
-        <article><Clock3 size={25} /><h3>Tiempos de respuesta</h3><p>Podés dejar tu consulta en cualquier momento. La respuesta depende de la disponibilidad del canal.</p></article>
+        <article><Clock3 size={25} /><h3>Canal disponible 24 horas</h3><p>Podés dejar tu consulta en cualquier momento. La respuesta depende de la disponibilidad del canal.</p></article>
       </div>
 
       <WhatsAppLink className="button button-primary">Consultar por WhatsApp <ExternalLink size={17} /></WhatsAppLink>
