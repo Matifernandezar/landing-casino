@@ -9,7 +9,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Casino Online Argentina por WhatsApp 24 Horas | Casino Virtual",
+    default: "Casino Online Argentina por WhatsApp | Casino Virtual",
     template: "%s | Casino Virtual Argentina",
   },
   description: siteConfig.description,
@@ -17,13 +17,11 @@ export const metadata: Metadata = {
   keywords: [
     "casino online argentina",
     "casino virtual argentina",
-    "casino online whatsapp",
     "casino online whatsapp argentina",
-    "casino online 24 horas whatsapp",
+    "casino online whatsapp",
+    "casino virtual whatsapp",
     "casino whatsapp",
     "casinos whatsapp",
-    "casino virtual whatsapp",
-    "casino fichas whatsapp",
     "casino online desde el celular",
   ],
   openGraph: {
@@ -31,12 +29,12 @@ export const metadata: Metadata = {
     locale: "es_AR",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Casino Online Argentina por WhatsApp 24 Horas",
+    title: "Casino Online Argentina por WhatsApp | Casino Virtual",
     description: siteConfig.description,
   },
   twitter: {
     card: "summary",
-    title: "Casino Online Argentina por WhatsApp 24 Horas",
+    title: "Casino Online Argentina por WhatsApp",
     description: siteConfig.description,
   },
   robots: {
