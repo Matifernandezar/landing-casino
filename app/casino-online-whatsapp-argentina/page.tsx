@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BadgeCheck, Clock3, ExternalLink, MessageCircle, SearchCheck, ShieldCheck, Smartphone } from "lucide-react";
+import { BadgeCheck, ExternalLink, MessageCircle, SearchCheck, ShieldCheck, Smartphone } from "lucide-react";
 import { ArticleLayout, ArticleSchema } from "../article-layout";
 import { WhatsAppLink } from "../whatsapp-link";
 
-const title = "Casino online por WhatsApp 24 horas en Argentina";
-const description = "Cómo consultar por WhatsApp las 24 horas sobre casino online en Argentina, qué verificar antes de continuar y cómo reconocer una plataforma segura.";
+const title = "Casino online por WhatsApp en Argentina: consultas y acceso";
+const description = "Casino online por WhatsApp en Argentina: cómo consultar desde el celular sobre acceso, promociones y funcionamiento, y qué revisar antes de continuar.";
 const path = "/casino-online-whatsapp-argentina";
 
 export const metadata: Metadata = {
@@ -14,11 +14,10 @@ export const metadata: Metadata = {
   alternates: { canonical: path },
   keywords: [
     "casino online whatsapp argentina",
-    "casino virtual whatsapp",
+    "casino online whatsapp",
+    "casino whatsapp argentina",
     "casino por whatsapp",
-    "casino online argentina whatsapp",
-    "casino online 24 horas whatsapp",
-    "casino whatsapp 24 horas argentina",
+    "casino virtual whatsapp",
   ],
   openGraph: { title, description, url: path, type: "article" },
 };
@@ -29,16 +28,12 @@ const faqs = [
     answer: "Sí. Podés usar nuestro canal de WhatsApp para resolver dudas generales sobre acceso, promociones y funcionamiento antes de continuar.",
   },
   {
-    question: "¿El canal de WhatsApp está disponible las 24 horas?",
-    answer: "Podés dejar tu consulta durante las 24 horas. El tiempo de respuesta depende de la disponibilidad del canal en ese momento.",
+    question: "¿Puedo acceder desde el celular?",
+    answer: "Sí. El sitio está optimizado para móviles y los botones principales abren WhatsApp directamente desde el teléfono.",
   },
   {
-    question: "¿Tener WhatsApp significa que un casino es legal?",
+    question: "¿WhatsApp demuestra que una plataforma es legal?",
     answer: "No. Un número o enlace de WhatsApp no reemplaza la licencia, el dominio oficial ni las condiciones publicadas por la plataforma.",
-  },
-  {
-    question: "¿Qué debo verificar antes de registrarme?",
-    answer: "Comprobá la regulación aplicable en tu provincia, el dominio final, la identidad del operador y sus términos. En Argentina la autorización depende de cada jurisdicción.",
   },
   {
     question: "¿La atención está destinada a menores de edad?",
@@ -59,50 +54,43 @@ export default function CasinoWhatsAppPage() {
 
   return (
     <ArticleLayout
-      kicker="ATENCIÓN DIRECTA"
+      kicker="CASINO POR WHATSAPP"
       title={title}
       description={description}
-      readingTime="7 minutos de lectura"
+      readingTime="6 minutos de lectura"
       toc={[
         { href: "#respuesta", label: "Respuesta rápida" },
         { href: "#consultas", label: "Qué podés consultar" },
-        { href: "#seguridad", label: "Controles de seguridad" },
         { href: "#como-funciona", label: "Cómo funciona" },
+        { href: "#seguridad", label: "Antes de continuar" },
         { href: "#preguntas", label: "Preguntas frecuentes" },
       ]}
     >
-      <p id="respuesta"><strong>Respuesta rápida:</strong> Casino Virtual Argentina ofrece un canal directo de consultas por WhatsApp disponible las 24 horas para personas mayores de 18 años. Podés dejar tu mensaje en cualquier momento antes de registrarte o continuar en una plataforma.</p>
+      <p id="respuesta"><strong>Respuesta rápida:</strong> Casino Virtual Argentina ofrece un canal directo de consultas por WhatsApp para personas mayores de 18 años. Podés escribir desde el celular antes de registrarte o continuar en una plataforma.</p>
 
-      <div className="article-callout"><MessageCircle size={26} /><p>WhatsApp es un canal de comunicación. No demuestra que una plataforma tenga licencia ni reemplaza la verificación del dominio y la regulación correspondiente a tu provincia.</p></div>
+      <div className="article-callout"><MessageCircle size={26} /><p>WhatsApp es un canal de comunicación. No demuestra que una plataforma tenga licencia ni reemplaza la verificación de sus condiciones.</p></div>
 
-      <h2 id="consultas">Casino online por WhatsApp con consultas las 24 horas</h2>
+      <h2 id="consultas">Qué podés consultar por WhatsApp</h2>
       <div className="legal-card-grid">
-        <article><Smartphone size={25} /><h3>Acceso desde el celular</h3><p>Consultas generales sobre el acceso móvil y el funcionamiento de la plataforma.</p></article>
-        <article><BadgeCheck size={25} /><h3>Promociones disponibles</h3><p>Información sobre condiciones, vencimientos y requisitos que conviene leer antes de aceptar un bono.</p></article>
-        <article><SearchCheck size={25} /><h3>Dominio y disponibilidad</h3><p>Orientación para revisar la dirección final y confirmar si corresponde a tu ubicación.</p></article>
-        <article><Clock3 size={25} /><h3>Canal disponible 24 horas</h3><p>Podés dejar tu consulta en cualquier momento. La respuesta depende de la disponibilidad del canal.</p></article>
+        <article><Smartphone size={25} /><h3>Acceso desde el celular</h3><p>Consultas generales sobre navegación móvil y funcionamiento.</p></article>
+        <article><BadgeCheck size={25} /><h3>Promociones</h3><p>Información sobre condiciones, vigencia y requisitos antes de aceptar un beneficio.</p></article>
+        <article><SearchCheck size={25} /><h3>Disponibilidad</h3><p>Orientación general sobre acceso y opciones disponibles.</p></article>
+        <article><MessageCircle size={25} /><h3>Canal directo</h3><p>Un solo punto de contacto para iniciar tu consulta.</p></article>
       </div>
 
       <WhatsAppLink className="button button-primary">Consultar por WhatsApp <ExternalLink size={17} /></WhatsAppLink>
-
-      <h2 id="seguridad">Qué verificar antes de continuar</h2>
-      <p>En Argentina el juego online se regula por provincia y por la Ciudad Autónoma de Buenos Aires. Una plataforma habilitada en una jurisdicción puede no estar autorizada en otra.</p>
-      <div className="check-table">
-        <div><strong>Mayoría de edad</strong><span>El acceso debe estar restringido a personas mayores de 18 años.</span></div>
-        <div><strong>Dominio</strong><span>Revisá la dirección completa y evitá imitaciones o enlaces que cambian constantemente.</span></div>
-        <div><strong>Jurisdicción</strong><span>Confirmá que la autorización corresponda a la provincia donde te encontrás.</span></div>
-        <div><strong>Condiciones</strong><span>Leé límites, requisitos de promociones y políticas antes de tomar una decisión.</span></div>
-        <div><strong>Datos personales</strong><span>No compartas contraseñas, códigos de verificación ni información sensible por mensajes no solicitados.</span></div>
-      </div>
-      <p>Para profundizar estos controles, consultá nuestra guía de <Link href="/casinos-online-legales-argentina">casinos online legales en Argentina</Link>.</p>
 
       <h2 id="como-funciona">Cómo funciona nuestro canal</h2>
       <ol>
         <li>Abrí cualquiera de los botones de WhatsApp del sitio.</li>
         <li>Escribí tu consulta de forma clara y sin enviar datos sensibles.</li>
-        <li>Revisá la información y verificá por tu cuenta el dominio y las condiciones aplicables.</li>
+        <li>Revisá la información y las condiciones antes de continuar.</li>
         <li>Si decidís jugar, establecé previamente un límite de tiempo y dinero.</li>
       </ol>
+      <p>Si tu búsqueda es específicamente por disponibilidad durante todo el día, visitá nuestra página de <Link href="/casino-online-24-horas-whatsapp">casino online 24 horas por WhatsApp</Link>.</p>
+
+      <h2 id="seguridad">Qué revisar antes de continuar</h2>
+      <p>En Argentina el juego online se regula por jurisdicción. Verificá las condiciones aplicables a tu ubicación y no compartas contraseñas ni códigos de verificación por mensajes no solicitados.</p>
       <div className="article-callout"><ShieldCheck size={26} /><p>El juego implica riesgo de pérdida. La atención por WhatsApp no garantiza resultados ni reemplaza las herramientas de <Link href="/juego-responsable">juego responsable</Link>.</p></div>
 
       <h2 id="preguntas">Preguntas frecuentes</h2>
