@@ -33,7 +33,7 @@ export function ArticleLayout({
           <span className="section-kicker">{kicker}</span>
           <h1>{title}</h1>
           <p className="article-dek">{description}</p>
-          <div className="article-meta"><span>Actualizado: {siteConfig.updatedAt}</span><span>·</span><span>{readingTime}</span><span>·</span><span>Contenido editorial independiente</span></div>
+          <div className="article-meta"><span>Actualizado: {siteConfig.updatedAt}</span><span>·</span><span>{readingTime}</span><span>·</span><span>Contenido informativo +18</span></div>
         </div>
       </header>
       <div className="article-page">
@@ -48,7 +48,7 @@ export function ArticleLayout({
               <div className="sidebar-card">
                 <span>ATENCIÓN DIRECTA</span>
                 <h2>¿Tenés una consulta?</h2>
-                <p>Escribinos por WhatsApp para recibir orientación antes de continuar.</p>
+                <p>Escribinos por WhatsApp desde el celular antes de continuar.</p>
                 <WhatsAppLink className="button button-primary">Abrir WhatsApp <MessageCircle size={16} /></WhatsAppLink>
               </div>
             ) : (
@@ -82,7 +82,7 @@ export function ArticleSchema({
     description,
     inLanguage: "es-AR",
     datePublished: "2026-08-29",
-    dateModified: "2026-09-10",
+    dateModified: "2026-09-19",
     mainEntityOfPage: `${siteConfig.url}${path}`,
     author: { "@type": "Organization", name: siteConfig.name },
     publisher: { "@type": "Organization", name: siteConfig.name },
